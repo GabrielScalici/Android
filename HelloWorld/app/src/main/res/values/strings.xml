@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string name="texto_apresentacao">Olá, bem-vindo ao nosso primeiro aplicativo android. Para se registrar basta digitar seu e-mail, senha e clicar no botao. </string>
+    <string name="nome_email">E-mail</string>
+    <string name="nome_senha">Senha</string>
+    <string name="mostrar_senha">Mostrar senha</string>
+    <string name="botao_acessar">Acessar</string>
+    <string name="botao_recuperar">Recuperar Senha</string>
+    <string name="registrar">Registrar</string>
+
+
+    <string name="label_nome">Nome:</string>
+    <string name="label_sexo">Sexo:</string>>
+    <string name="radio_masculino">Masculino</string>
+    <string name="radio_feminino">Feminino</string>
+    <string name="label_nascimento">Data de nascimento</string>
+    <string name="label_email">E-mail</string>
+    <string name="repetir_senha">Repetir Senha</string>
+    <string name="botao_prox">Próximo</string>
+
+
+</resources>
