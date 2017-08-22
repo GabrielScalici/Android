@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:text="" />
 
     <RadioButton
@@ -71,10 +71,9 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/registrar_principal"
         android:layout_marginTop="50px"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/botao"
         android:text="@string/registrar" />
 
 
