@@ -57,17 +57,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
-            android:layout_marginLeft="90px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            style="@style/botao"
             android:text="@string/botao_acessar" />
 
         <Button
             android:id="@+id/button2"
             android:layout_marginLeft="60px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/botao"
             android:text="@string/botao_recuperar" />
 
 
