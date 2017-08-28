@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/textoMedio"
+            android:text="@string/nome"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomeET"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/sexo"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexoRG">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fem"
+            android:id="@+id/femRB"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masc"
+            android:id="@+id/mascRB"/>
+    </RadioGroup>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/nascimento"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/nascimentoET"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/email"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/emailET"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/senha"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="textPassword"
+            android:id="@+id/senhaET"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/repetir_senha"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="textPassword"
+            android:id="@+id/repetirSenhaET"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/botao"
+        android:text="@string/proximo"
+        android:id="@+id/proximoBtn"/>
+
+</LinearLayout>
