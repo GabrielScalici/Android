@@ -20,7 +20,7 @@ public class PrimeiraTela extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_primeira_tela);
-
+s
         registrarBtn = (Button) findViewById(R.id.registrarBtn);
         mostrarSenhaCB = (CheckBox) findViewById(R.id.mostrarSenhaCB);
         senhaET = (EditText) findViewById(R.id.senhaET);

@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 public class PrimeiraTela extends AppCompatActivity {
 
@@ -24,8 +25,8 @@ public class PrimeiraTela extends AppCompatActivity {
 
         //Reclama que os tipos sao diferentes do parametro, entao faz um cast
         botao_registrar = (Button) findViewById(R.id.registrar_principal);
-        mostrarSenha = (CheckBox) findViewById(mostrarSenha);
-        editTextSenha = (EditText) findViewById(editTextSenha);
+        //mostrarSenha = (RadioButton) findViewById(R.id.mostrarSenha);
+        //editTextSenha = (EditText) findViewById(R.id.editTextSenha);
 
 
         botao_registrar.setOnClickListener( new View.OnClickListener() {
@@ -37,7 +38,7 @@ public class PrimeiraTela extends AppCompatActivity {
 
         });
 
-
+        /*
         mostrarSenha.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -52,6 +53,6 @@ public class PrimeiraTela extends AppCompatActivity {
 
 
         });
-
+        */
     }
 }
