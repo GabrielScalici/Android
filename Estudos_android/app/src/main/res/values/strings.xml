@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Estudos_android</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="titulo">Titulo</string>>
+
 </resources>
