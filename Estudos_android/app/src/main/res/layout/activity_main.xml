@@ -12,10 +12,10 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.14"
-        android:text="TextView" />
+        style="@style/textoGrande"
+        android:layout_weight="0.02"
+        android:text="@string/var_titulo"
+        android:layout_width="match_parent" />
 
     <Button
         android:id="@+id/but_go"
@@ -24,5 +24,19 @@
         android:text="Go"
         tools:layout_editor_absoluteX="154dp"
         tools:layout_editor_absoluteY="182dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/textoGrande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_go2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="Go" />
 
 </LinearLayout>
