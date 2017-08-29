@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         go_second.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this , SecondPage.class);
+                Intent i = new Intent(MainActivity.this , Main2Activity.class);
                 startActivity(i);
             }
         });
