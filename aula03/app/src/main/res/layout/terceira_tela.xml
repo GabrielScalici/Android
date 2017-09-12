@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/pais"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lista_paises">
+    </ListView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:paddingLeft="15dp"
+        android:id="@+id/bandeira_selecionada"
+        android:src="@drawable/brasil"/>
+
+    <Button
+        style="@style/botao"
+        android:text="@string/proximo"
+        android:id="@+id/proximoBtn"/>
+
+</LinearLayout>
