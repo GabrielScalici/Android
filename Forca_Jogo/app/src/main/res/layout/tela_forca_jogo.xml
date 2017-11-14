@@ -9,6 +9,12 @@
     tools:context="gabrielscalici.forca_jogo.tela_forca_jogo">
 
 
+    <TextView
+        android:id="@+id/txt_segredo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp" />
+
     <EditText
         android:id="@+id/edt_palavra"
         android:layout_width="match_parent"
@@ -37,4 +43,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submeter" />
+
+
 </LinearLayout>
