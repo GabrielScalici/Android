@@ -11,6 +11,7 @@ import android.widget.Toast;
 public class Main extends AppCompatActivity{
 
     Button btn_jogar;
+    int index_3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,20 @@ public class Main extends AppCompatActivity{
 
         btn_jogar = (Button) findViewById(R.id.btn_jogar);
 
+
         btn_jogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                    Intent intent = new Intent(Main.this, tela_forca_jogo.class);
-                    startActivity(intent);
+                Intent intent = new Intent(Main.this, tela_forca_jogo.class);
+                startActivity(intent);
 
             }
         });
+
+
+
+
+
     }
 }

@@ -8,14 +8,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class tela_forca_jogo extends AppCompatActivity {
+
 
     //Armazenar a quantidade de erros
     int quantidade_vidas = 7;
-    String palavra = "FELIPE";
+    int index_palavra;
     String segredo;
     int getQuantidade_erros;
     long startTime;
+    int index;
 
     public TextView exibir_vidas;
     public TextView txt_segredo;
@@ -23,6 +27,7 @@ public class tela_forca_jogo extends AppCompatActivity {
     public EditText caixa;
 
 
+    String palavras[] = {"FELIPE", "GABRIEL", "CAROLINA", "ROBERTO", "LUIS","BULMA"};
 
 
     @Override
@@ -30,13 +35,22 @@ public class tela_forca_jogo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_forca_jogo);
 
+        //Colocando o tempo no projeto
         startTime = System.currentTimeMillis();
+
+        //Pegando qual palavra sera usado
+        Intent intent = getIntent();
+        index = intent.getIntExtra("auxindice", -1);
+
+            if(index == -1){
+                index = 0;
+            }
 
 
         exibir_vidas = (TextView) findViewById(R.id.txt_vidas);
         exibir_vidas.setText(String.valueOf(quantidade_vidas));
 
-
+        //Caixa para digitar a palavra correta
         caixa = (EditText) findViewById(R.id.edt_palavra);
 
         btn_submeter = (Button) findViewById(R.id.btn_submeter);
@@ -47,11 +61,11 @@ public class tela_forca_jogo extends AppCompatActivity {
 
 
                 //Pegnado o texto
-                String txt = caixa.getText().toString();
+                String txt = caixa.getText().toString().toUpperCase();
 
-                if(txt.compareTo(palavra)==0){
+                if(txt.compareTo(palavras[index].toUpperCase()) == 0){
                     long estimatedTime = System.currentTimeMillis() - startTime;
-                    tela_venceu(v, estimatedTime);
+                    tela_venceu(v, estimatedTime, index_palavra);
 
                 }else{
                     quantidade_vidas -= 1;
@@ -76,9 +90,10 @@ public class tela_forca_jogo extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void tela_venceu(View view, long time){
+    public void tela_venceu(View view, long time, int index){
         Intent intent = new Intent(tela_forca_jogo.this, Tela_Venceu.class);
         intent.putExtra("tempo", time);
+        intent.putExtra("indice", index);
         startActivity(intent);
     }
 

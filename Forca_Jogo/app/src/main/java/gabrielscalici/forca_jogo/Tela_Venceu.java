@@ -11,6 +11,7 @@ public class Tela_Venceu extends AppCompatActivity {
 
     public Button btn_voltar;
     public TextView txt_tempo;
+    int aux_index;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,11 @@ public class Tela_Venceu extends AppCompatActivity {
         setContentView(R.layout.activity_tela_venceu);
 
         Intent intent = getIntent();
-       long tempo = intent.getLongExtra("tempo", -1);
+        long tempo = intent.getLongExtra("tempo", -1);
+        int index = intent.getIntExtra("indice", -1);
+
+        //Arrumando o indice para mandar de volta
+        aux_index = index + 1;
 
         btn_voltar = (Button) findViewById(R.id.btn_restart);
         txt_tempo = (TextView) findViewById(R.id.txt_timer);
@@ -29,7 +34,8 @@ public class Tela_Venceu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Tela_Venceu.this, Main.class);
+                Intent intent = new Intent(Tela_Venceu.this, tela_forca_jogo.class);
+                intent.putExtra("auxindice", aux_index);
                 startActivity(intent);
 
             }
