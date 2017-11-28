@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="icmc.usp.br.formularioicmc.PrimeiraTela">
+
+    <TextView
+        style="@style/textoGrande"
+        android:text="@string/ola"/>
+
+    <TextView
+        style="@style/textoMedio"
+    android:text="@string/bemvindo_msg"
+    android:id="@+id/textView"/>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/email"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/emailET"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textoMedio"
+        android:text="@string/senha"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_weight="0.5"
+            android:id="@+id/senhaET"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_senha"
+        android:id="@+id/mostrarSenhaCB"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/botao"
+            android:text="@string/acessar"
+            android:id="@+id/acessarBtn"/>
+
+        <Button
+            style="@style/botao"
+            android:text="@string/registrar"
+            android:id="@+id/registrarBtn"/>
+    </LinearLayout>
+
+    <Button
+        style="@style/botao"
+        android:text="@string/recuperar_senha"
+        android:id="@+id/recuperarSenhaBtn"/>
+
+</LinearLayout>

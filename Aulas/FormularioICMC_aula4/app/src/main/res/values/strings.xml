@@ -1,0 +1,24 @@
+<resources>
+    <string name="acessar">Acessar</string>
+    <string name="app_name">Formulário</string>
+    <string name="bemvindo_msg">Bem-vindo ao nosso primeiro aplicativo, que visa praticar conceitos básicos da programação para Android, por meio de um conjunto de
+        formulários. Nossa aplicação manipula os dados fornecidos pelo usuário e os armazena no dispositivo. Por favor, forneça seu usuário e senha, ou pressione \'registrar\'.
+    </string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="fem">Feminino</string>
+    <string name="ola">Olá.</string>
+    <string name="masc">Masculino</string>
+    <string name="erro_senha">As senhas não são iguais.</string>
+    <string name="erro_acesso">Os dados não estão corretos.</string>
+    <string name="sucesso_registro">Dados salvos corretamente.</string>
+    <string name="nascimento">Data de nascimento:</string>
+    <string name="nome">Nome:</string>
+    <string name="mostrar_senha">Mostrar senha.</string>
+    <string name="pais">País</string>
+    <string name="recuperar_senha">Recuperar senha</string>
+    <string name="registrar">Registrar</string>
+    <string name="repetir_senha">Repetir senha</string>
+    <string name="sexo">Sexo:</string>
+    <string name="proximo">Próximo</string>
+</resources>
